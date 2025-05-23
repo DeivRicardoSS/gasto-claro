@@ -5,17 +5,18 @@ export default StyleSheet.create({
         width: '100%',
         height: 20,
         top: 0,
-        padding: 0,
+        padding: 32,
         margin: 0,
         justifyContent: 'center',
         alignItems: 'center',
-        
-        backgroundColor: 'blue'
+        backgroundColor: '#dedede'
     },
 
     text: {
         padding: 0,
         margin: 0,
-        textAlign: 'center'
+        textAlign: 'center',
+        fontWeight: 700,
+        fontSize: 16
     }
 });
