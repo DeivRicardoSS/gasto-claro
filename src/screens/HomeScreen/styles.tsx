@@ -6,6 +6,8 @@ export default StyleSheet.create({
         gap: 5
     },
     content: {
-        padding: 16
+        flex: 1,
+        padding: 16,
+        gap: 5
     }
 });

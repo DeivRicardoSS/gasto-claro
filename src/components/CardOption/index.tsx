@@ -10,19 +10,19 @@ interface CardOptionProps {
 export function CardOption({ nome, meta, fatura }: CardOptionProps) {
     return (
         <View style={styles.container}>
-            <View>
-                <DotsSixVertical size={32} color="#000" />
+            <View style={styles.dots}>
+                <DotsSixVertical size={16} color="#000" />
             </View>
-            <View>
+            <View style={styles.info}>
                 <Text>{nome}</Text>
                 <Text>{meta}</Text>
                 <Text>{fatura}</Text>
             </View>
-            <View>
-                <NotePencil size={32} color="#000" />
+            <View style={styles.edit}>
+                <NotePencil size={16} weight="fill" color="white" />
             </View>
-            <View>
-                <Trash size={32} color="#000" />
+            <View style={styles.delete}>
+                <Trash size={16} weight="fill" color="white" />
             </View>
         </View>
     );
