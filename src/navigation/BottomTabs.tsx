@@ -28,8 +28,8 @@ export function BottomTabs() {
 
             })}
         >
-            <Tab.Screen name="Notificações" component={NotificationsScreen} />
             <Tab.Screen name="Home" component={HomeScreen} />
+            <Tab.Screen name="Notificações" component={NotificationsScreen} />
             <Tab.Screen name="Perfil" component={ProfileScreen} />
         </Tab.Navigator>
     );
