@@ -1,17 +1,15 @@
-import { View, Text } from "react-native";
+import { TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
 interface buttonProps {
-    children: string
+    children: any
 }
 
 export function Button({children} : buttonProps){
 
     return (
-        <View style = {styles.container}>
-            <Text>
-                {children}
-            </Text>
-        </View>
+        <TouchableOpacity style = {styles.container}>
+            {children}
+        </TouchableOpacity>
 
     )
 

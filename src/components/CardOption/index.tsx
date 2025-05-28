@@ -14,9 +14,9 @@ export function CardOption({ nome, meta, fatura }: CardOptionProps) {
                 <DotsSixVertical size={16} color="#000" />
             </View>
             <View style={styles.info}>
-                <Text>{nome}</Text>
-                <Text>{meta}</Text>
-                <Text>{fatura}</Text>
+                <Text style={styles.nome}>{nome}</Text>
+                <Text style={styles.meta}>{meta}</Text>
+                <Text style={styles.fatura}>{fatura}</Text>
             </View>
             <View style={styles.edit}>
                 <NotePencil size={16} weight="fill" color="white" />

@@ -1,8 +1,9 @@
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, Text } from "react-native";
 import { Header } from "../../components/Header";
 import { CardOption } from "../../components/CardOption";
 import styles from "./styles"
 import { Button } from "../../components/Button";
+import { Plus } from "phosphor-react-native";
 
 export function HomeScreen() {
     return  (
@@ -28,7 +29,8 @@ export function HomeScreen() {
                 />
 
                 <Button>
-                    Botão
+                    <Plus size={20} color="white" />
+                    <Text style={{ color: "white" }}>Novo Estabelecimento</Text>
                 </Button>
             </ScrollView>
         </View>

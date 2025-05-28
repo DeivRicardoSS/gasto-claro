@@ -8,7 +8,7 @@ export default StyleSheet.create({
         backgroundColor: "#F8F8F8",
         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.26)",
         borderRadius: 8,
-        marginBottom: 8,
+        marginBottom: 10,
         overflow: 'hidden'
     },
     dots: {
@@ -19,10 +19,7 @@ export default StyleSheet.create({
     },
     info: {
         flex: 1,
-        paddingTop: 8,
-        paddingBottom: 8,
-        paddingLeft: 16,
-        paddingRight: 16,
+        padding: 16,
     },
     edit: {
         height: "100%",
@@ -37,5 +34,20 @@ export default StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#FF3B30",
+    },
+    nome: {
+        fontWeight: 600,
+        fontSize: 16,
+        color: "#464646"
+    },
+    meta: {
+        fontWeight: 400,
+        fontSize: 11,
+        color: "#464646"
+    },
+    fatura: {
+        fontWeight: 400,
+        fontSize: 11,
+        color: "#464646"
     }
 });

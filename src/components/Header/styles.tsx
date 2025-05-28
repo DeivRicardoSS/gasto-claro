@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import globalStyles from "../../../globalStyles";
 
 export default StyleSheet.create({
     container: {
@@ -9,7 +10,8 @@ export default StyleSheet.create({
         margin: 0,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#dedede'
+        backgroundColor: globalStyles.background,
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.26)"
     },
 
     text: {
