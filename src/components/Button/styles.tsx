@@ -11,7 +11,11 @@ export default StyleSheet.create({
         padding: 16,
         borderRadius: 8,
         backgroundColor: '#45556C',
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.26)",
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.26,
+        shadowRadius: 4,
+        elevation: 5,
     }
 
 })

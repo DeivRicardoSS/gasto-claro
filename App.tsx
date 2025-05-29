@@ -1,14 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { BottomTabs } from './src/navigation/BottomTabs';
+import { StackNavigator } from './src/navigation/StackNavigator';
 import globalStyles from './globalStyles';
 
+
 export default function App() {
+  
   return (
-    <NavigationContainer>
-      <BottomTabs/>
-    </NavigationContainer>
+    <>
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor={globalStyles.background}
+      />
+      <NavigationContainer>
+        <StackNavigator/>
+      </NavigationContainer>
+    </>
   );
 }
 

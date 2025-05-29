@@ -1,10 +1,10 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, SafeAreaView } from "react-native";
 import { GearSix, Globe, PersonArmsSpread, File, ChalkboardTeacher, SignOut } from "phosphor-react-native";
 import styles from "./styles"
 
 export function ProfileScreen() {
     return  (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <View style={styles.user}>
                 <Image style={styles.userImg} source={require('../../../assets/placeholderProfile.png')} />
                 <View>
@@ -38,6 +38,6 @@ export function ProfileScreen() {
                     <Text>Sair</Text>
                 </View>
             </View>
-        </View>
+        </SafeAreaView>
     );
 }

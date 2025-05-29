@@ -5,30 +5,25 @@ import styles from "./styles"
 import { Button } from "../../components/Button";
 import { Plus } from "phosphor-react-native";
 
-export function HomeScreen({navigation}: any) {
+export function EstablishmentScreen() {
     return  (
         <SafeAreaView style={styles.container}>
-            <Header
-                name="Estabelecimentos"
-            />
+
             <ScrollView style={styles.content}>
                 <CardOption
                     nome="Estabelecimento 2"
                     meta="R$ 100,00"
                     fatura="R$ 200,00"
-                    onPress={() => navigation.navigate('Estabelecimento')}
                 />
                 <CardOption
                     nome="Estabelecimento 3"
                     meta="R$ 100,00"
                     fatura="R$ 200,00"
-                    onPress={() => navigation.navigate('Estabelecimento')}
                 />
                 <CardOption
                     nome="Estabelecimento 4"
                     meta="R$ 100,00"
                     fatura="R$ 200,00"
-                    onPress={() => navigation.navigate('Estabelecimento')}
                 />
 
                 <Button>
