@@ -4,10 +4,14 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
     container: {
         height: '100%',
+    },
+    gambiarra: {
         padding: 16,
-        gap: 20,
+        width: '100%',
+        height: '100%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        gap: 20,
     },
     img: {
         width: 200,
