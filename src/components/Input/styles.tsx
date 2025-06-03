@@ -7,7 +7,6 @@ export default StyleSheet.create({
         alignItems: 'flex-start',
         justifyContent: 'center',
         gap: 8,
-        height: 80
     },
 
     label: {
@@ -18,7 +17,7 @@ export default StyleSheet.create({
     inputContainer: {
         width: '100%',
         height: 60,
-        padding: 8,
+        padding: 10,
         backgroundColor: globalStyles.background2,
         justifyContent: 'center',
         borderRadius: 8,
@@ -30,6 +29,7 @@ export default StyleSheet.create({
     input: {
         flex: 1,
         color: 'black',
-        height: '100%'
+        height: '100%',
+        outlineWidth: 0
     }
 });

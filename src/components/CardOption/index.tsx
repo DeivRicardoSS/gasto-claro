@@ -7,8 +7,8 @@ import { useWindowDimensions } from "react-native";
 
 interface CardOptionProps {
     nome: string;
-    meta: string;
-    fatura: string;
+    meta: number;
+    fatura: number;
     onPress?: () => void
 }
 export function CardOption({ nome, meta, fatura, onPress }: CardOptionProps) {
