@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 
+
 export default StyleSheet.create({
     container: {
         padding: 0,
@@ -8,7 +9,17 @@ export default StyleSheet.create({
     },
     content: {
         flex: 1,
+        gap: 5,
         padding: 16,
-        gap: 5
+    },
+    cards: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        gap: 10,
+        justifyContent: 'center',
+        minHeight: 400
+    },
+    button: {
+        alignItems: 'center'
     }
 });

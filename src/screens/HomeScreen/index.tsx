@@ -12,29 +12,33 @@ export function HomeScreen({navigation}: any) {
                 name="Estabelecimentos"
             />
             <ScrollView style={styles.content}>
-                <CardOption
-                    nome="Estabelecimento 2"
-                    meta="R$ 100,00"
-                    fatura="R$ 200,00"
-                    onPress={() => navigation.navigate('Estabelecimento')}
-                />
-                <CardOption
-                    nome="Estabelecimento 3"
-                    meta="R$ 100,00"
-                    fatura="R$ 200,00"
-                    onPress={() => navigation.navigate('Estabelecimento')}
-                />
-                <CardOption
-                    nome="Estabelecimento 4"
-                    meta="R$ 100,00"
-                    fatura="R$ 200,00"
-                    onPress={() => navigation.navigate('Estabelecimento')}
-                />
+                <View style={styles.cards}>
+                    <CardOption
+                        nome="Estabelecimento 2"
+                        meta="R$ 100,00"
+                        fatura="R$ 200,00"
+                        onPress={() => navigation.navigate('Estabelecimento')}
+                    />
+                    <CardOption
+                        nome="Estabelecimento 3"
+                        meta="R$ 100,00"
+                        fatura="R$ 200,00"
+                        onPress={() => navigation.navigate('Estabelecimento')}
+                    />
+                    <CardOption
+                        nome="Estabelecimento 4"
+                        meta="R$ 100,00"
+                        fatura="R$ 200,00"
+                        onPress={() => navigation.navigate('Estabelecimento')}
+                    />
+                </View>
 
-                <Button>
-                    <Plus size={20} color="white" />
-                    <Text style={{ color: "white" }}>Novo Estabelecimento</Text>
-                </Button>
+                <View style={styles.button}>
+                    <Button>
+                        <Plus size={20} color="white" />
+                        <Text style={{ color: "white" }}>Novo Estabelecimento</Text>
+                    </Button>
+                </View>
             </ScrollView>
         </SafeAreaView>
     );
