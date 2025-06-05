@@ -47,8 +47,13 @@ export function HomeScreen({ navigation }: any) {
             setEstabelecimentos(resultado);
         }
 
-
+        requisicao();
     }, [])
+
+    const handleButton = async (id_imovel: string) => {
+        await AsyncStorage.setItem('id_imovel', id_imovel);
+        navigation.navigate('Estabelecimento');
+    }
 
 
 
@@ -67,8 +72,7 @@ export function HomeScreen({ navigation }: any) {
                                 meta = {estab.meta_consumo}
                                 fatura = {estab.fatura}
                                 onPress={() => {
-                                    await AsyncStorage.setItem('id_imovel', estab.objectId);
-                                    navigation.navigate('Estabelecimento');
+                                    handleButton(estab.objectId)
                                 }}
                             />
                         ))
