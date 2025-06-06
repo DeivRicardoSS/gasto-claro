@@ -11,7 +11,7 @@ export function WelcomeScreen({navigation}: any) {
                 <FormButton variant="secondary" onPress={() => navigation.navigate('Login')}>
                     Entrar
                 </FormButton>
-                <FormButton variant="primary" onPress={() => navigation.navigate('Register')}>
+                <FormButton variant="primary" onPress={() => navigation.navigate('Dados Pessoais')}>
                     Cadastrar-se
                 </FormButton>
             </View>
